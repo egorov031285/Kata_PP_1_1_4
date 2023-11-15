@@ -10,7 +10,7 @@ public class Util {
     private static final String DB_USERNAME = "root";
     private static final String DB_PASSWORD = "root";
 
-    public Connection getConnection() {
+    public static Connection getConnection() {
 
         Connection connection = null;
         try {
@@ -22,7 +22,7 @@ public class Util {
         return connection;
     }
 
-    public void closeConnection(Connection connection) {
+    public static void closeConnection(Connection connection) {
         if (connection != null) {
             try {
                 connection.close();
